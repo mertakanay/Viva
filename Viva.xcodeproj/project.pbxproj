@@ -10,11 +10,13 @@
 		3EA1F6D51B41CA1A00362ACE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA1F6D41B41CA1A00362ACE /* main.m */; };
 		3EA1F6D81B41CA1A00362ACE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA1F6D71B41CA1A00362ACE /* AppDelegate.m */; };
 		3EA1F6DB1B41CA1A00362ACE /* Viva.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EA1F6D91B41CA1A00362ACE /* Viva.xcdatamodeld */; };
-		3EA1F6DE1B41CA1A00362ACE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA1F6DD1B41CA1A00362ACE /* ViewController.m */; };
+		3EA1F6DE1B41CA1A00362ACE /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA1F6DD1B41CA1A00362ACE /* MapViewController.m */; };
 		3EA1F6E11B41CA1A00362ACE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA1F6DF1B41CA1A00362ACE /* Main.storyboard */; };
 		3EA1F6E31B41CA1A00362ACE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EA1F6E21B41CA1A00362ACE /* Images.xcassets */; };
 		3EA1F6E61B41CA1A00362ACE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EA1F6E41B41CA1A00362ACE /* LaunchScreen.xib */; };
 		3EA1F6F21B41CA1A00362ACE /* VivaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA1F6F11B41CA1A00362ACE /* VivaTests.m */; };
+		3ECF4EEE1B41CC92007E5C68 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECF4EED1B41CC92007E5C68 /* CoreLocation.framework */; };
+		BD76372CAFE85DCED037A500 /* libPods-Viva.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF8D959557D08B6DB55C932 /* libPods-Viva.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +36,18 @@
 		3EA1F6D61B41CA1A00362ACE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3EA1F6D71B41CA1A00362ACE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3EA1F6DA1B41CA1A00362ACE /* Viva.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Viva.xcdatamodel; sourceTree = "<group>"; };
-		3EA1F6DC1B41CA1A00362ACE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3EA1F6DD1B41CA1A00362ACE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3EA1F6DC1B41CA1A00362ACE /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		3EA1F6DD1B41CA1A00362ACE /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		3EA1F6E01B41CA1A00362ACE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EA1F6E21B41CA1A00362ACE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3EA1F6E51B41CA1A00362ACE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3EA1F6EB1B41CA1A00362ACE /* VivaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VivaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EA1F6F01B41CA1A00362ACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EA1F6F11B41CA1A00362ACE /* VivaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VivaTests.m; sourceTree = "<group>"; };
+		3ECF4EED1B41CC92007E5C68 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6FF8D959557D08B6DB55C932 /* libPods-Viva.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Viva.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E549316D1E3AFEBAA3B70F03 /* Pods-Viva.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viva.release.xcconfig"; path = "Pods/Target Support Files/Pods-Viva/Pods-Viva.release.xcconfig"; sourceTree = "<group>"; };
+		F72E34670C1AAC110B943F62 /* Pods-Viva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Viva.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Viva/Pods-Viva.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ECF4EEE1B41CC92007E5C68 /* CoreLocation.framework in Frameworks */,
+				BD76372CAFE85DCED037A500 /* libPods-Viva.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +70,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E568DADED18ADFEA88FC5DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F72E34670C1AAC110B943F62 /* Pods-Viva.debug.xcconfig */,
+				E549316D1E3AFEBAA3B70F03 /* Pods-Viva.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3EA1F6C61B41CA1A00362ACE = {
 			isa = PBXGroup;
 			children = (
 				3EA1F6D11B41CA1A00362ACE /* Viva */,
 				3EA1F6EE1B41CA1A00362ACE /* VivaTests */,
 				3EA1F6D01B41CA1A00362ACE /* Products */,
+				2E568DADED18ADFEA88FC5DD /* Pods */,
+				9FA633DA57B3AA7E2EBC7C4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,8 +104,8 @@
 			children = (
 				3EA1F6D61B41CA1A00362ACE /* AppDelegate.h */,
 				3EA1F6D71B41CA1A00362ACE /* AppDelegate.m */,
-				3EA1F6DC1B41CA1A00362ACE /* ViewController.h */,
-				3EA1F6DD1B41CA1A00362ACE /* ViewController.m */,
+				3EA1F6DC1B41CA1A00362ACE /* MapViewController.h */,
+				3EA1F6DD1B41CA1A00362ACE /* MapViewController.m */,
 				3EA1F6DF1B41CA1A00362ACE /* Main.storyboard */,
 				3EA1F6E21B41CA1A00362ACE /* Images.xcassets */,
 				3EA1F6E41B41CA1A00362ACE /* LaunchScreen.xib */,
@@ -122,6 +141,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9FA633DA57B3AA7E2EBC7C4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3ECF4EED1B41CC92007E5C68 /* CoreLocation.framework */,
+				6FF8D959557D08B6DB55C932 /* libPods-Viva.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EA1F6F51B41CA1A00362ACE /* Build configuration list for PBXNativeTarget "Viva" */;
 			buildPhases = (
+				1A3C544C1BC241D61DC5043C /* Check Pods Manifest.lock */,
 				3EA1F6CB1B41CA1A00362ACE /* Sources */,
 				3EA1F6CC1B41CA1A00362ACE /* Frameworks */,
 				3EA1F6CD1B41CA1A00362ACE /* Resources */,
+				0E6D8BB59997E8974BA8F6E0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +247,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E6D8BB59997E8974BA8F6E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Viva/Pods-Viva-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A3C544C1BC241D61DC5043C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3EA1F6CB1B41CA1A00362ACE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -224,7 +287,7 @@
 			files = (
 				3EA1F6D81B41CA1A00362ACE /* AppDelegate.m in Sources */,
 				3EA1F6D51B41CA1A00362ACE /* main.m in Sources */,
-				3EA1F6DE1B41CA1A00362ACE /* ViewController.m in Sources */,
+				3EA1F6DE1B41CA1A00362ACE /* MapViewController.m in Sources */,
 				3EA1F6DB1B41CA1A00362ACE /* Viva.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +414,7 @@
 		};
 		3EA1F6F61B41CA1A00362ACE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F72E34670C1AAC110B943F62 /* Pods-Viva.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Viva/Info.plist;
@@ -361,6 +425,7 @@
 		};
 		3EA1F6F71B41CA1A00362ACE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E549316D1E3AFEBAA3B70F03 /* Pods-Viva.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Viva/Info.plist;
@@ -422,6 +487,7 @@
 				3EA1F6F71B41CA1A00362ACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EA1F6F81B41CA1A00362ACE /* Build configuration list for PBXNativeTarget "VivaTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +496,7 @@
 				3EA1F6FA1B41CA1A00362ACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
