@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E1C18641B47490100980C86 /* InfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E1C18631B47490100980C86 /* InfoWindow.xib */; };
 		3EA1F6D51B41CA1A00362ACE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA1F6D41B41CA1A00362ACE /* main.m */; };
 		3EA1F6D81B41CA1A00362ACE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA1F6D71B41CA1A00362ACE /* AppDelegate.m */; };
 		3EA1F6DB1B41CA1A00362ACE /* Viva.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3EA1F6D91B41CA1A00362ACE /* Viva.xcdatamodeld */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E1C18631B47490100980C86 /* InfoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoWindow.xib; sourceTree = "<group>"; };
 		3EA1F6CF1B41CA1A00362ACE /* Viva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Viva.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EA1F6D31B41CA1A00362ACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EA1F6D41B41CA1A00362ACE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				3EA1F6D61B41CA1A00362ACE /* AppDelegate.h */,
 				3EA1F6D71B41CA1A00362ACE /* AppDelegate.m */,
 				3EA1F6DC1B41CA1A00362ACE /* MapViewController.h */,
+				3E1C18631B47490100980C86 /* InfoWindow.xib */,
 				3EA1F6DD1B41CA1A00362ACE /* MapViewController.m */,
 				3EA1F6DF1B41CA1A00362ACE /* Main.storyboard */,
 				3EA1F6E21B41CA1A00362ACE /* Images.xcassets */,
@@ -235,6 +238,7 @@
 				3EA1F6E11B41CA1A00362ACE /* Main.storyboard in Resources */,
 				3EA1F6E61B41CA1A00362ACE /* LaunchScreen.xib in Resources */,
 				3EA1F6E31B41CA1A00362ACE /* Images.xcassets in Resources */,
+				3E1C18641B47490100980C86 /* InfoWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
