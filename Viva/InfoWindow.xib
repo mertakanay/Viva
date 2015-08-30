@@ -1,23 +1,141 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+        <view autoresizesSubviews="NO" contentMode="scaleToFill" id="wY7-GG-vmb" customClass="CustomInfoWindow">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="red-line" translatesAutoresizingMaskIntoConstraints="NO" id="MgK-9J-QYx">
-                    <rect key="frame" x="0.0" y="530" width="600" height="70"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GsU-Xa-K6f">
+                    <rect key="frame" x="8" y="8" width="179" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vivaIcon" id="JcW-Np-HFB">
+                    <rect key="frame" x="195" y="9" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="5fq-jh-aaO" appends="YES" id="spw-FI-rx1"/>
+                    </connections>
                 </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="googleIcon" id="phl-RA-nhd">
+                    <rect key="frame" x="214" y="9" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="uep-ic-8sY" appends="YES" id="ISF-tg-NA8"/>
+                    </connections>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foursquareIcon" id="Lx0-eV-9EB">
+                    <rect key="frame" x="233" y="9" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="7tv-D3-rjK" appends="YES" id="f3R-po-CyI"/>
+                    </connections>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tripadvisorIcon" id="miw-DP-MHt">
+                    <rect key="frame" x="253" y="9" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="b4j-1E-fvk" appends="YES" id="Gib-pa-ad7"/>
+                    </connections>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yelpIcon" id="vDw-WD-Yz2">
+                    <rect key="frame" x="272" y="9" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="RU0-gO-XCu" appends="YES" id="bYw-5q-o27"/>
+                    </connections>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aeK-sR-hHO">
+                    <rect key="frame" x="8" y="82" width="179" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6UK-1d-OL6">
+                    <rect key="frame" x="8" y="37" width="150" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HOz-sI-hua">
+                    <rect key="frame" x="240" y="82" width="47" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Details">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onDetailsButtonTapped:" destination="wY7-GG-vmb" eventType="touchUpInside" id="gqo-JZ-fKC"/>
+                        <action selector="onDetailsButtonTapped:" destination="-1" eventType="touchUpInside" id="yqh-4H-OzG"/>
+                    </connections>
+                </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="detailsButton" destination="HOz-sI-hua" id="xg5-1N-kZ4"/>
+                <outlet property="infoImage1" destination="JcW-Np-HFB" id="4Gf-pe-bxD"/>
+                <outlet property="infoImage2" destination="phl-RA-nhd" id="eSW-hP-RMW"/>
+                <outlet property="infoImage3" destination="Lx0-eV-9EB" id="cPO-xf-ak3"/>
+                <outlet property="infoImage4" destination="miw-DP-MHt" id="BSn-lM-zkB"/>
+                <outlet property="infoImage5" destination="vDw-WD-Yz2" id="c09-rL-NPk"/>
+                <outlet property="placeNameLabel" destination="GsU-Xa-K6f" id="C2p-nY-GBC"/>
+                <outlet property="placeStarImage" destination="6UK-1d-OL6" id="H8q-t7-L5t"/>
+                <outlet property="placeTagLabel" destination="aeK-sR-hHO" id="LhZ-Sm-f4K"/>
+            </connections>
+            <point key="canvasLocation" x="301.5" y="304.5"/>
         </view>
+        <tapGestureRecognizer id="m2J-Ri-1HJ">
+            <connections>
+                <outlet property="delegate" destination="wY7-GG-vmb" id="fhO-2Q-nd1"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="5fq-jh-aaO">
+            <connections>
+                <outlet property="delegate" destination="wY7-GG-vmb" id="274-A1-xoV"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="uep-ic-8sY">
+            <connections>
+                <outlet property="delegate" destination="wY7-GG-vmb" id="qy1-4p-pD9"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="7tv-D3-rjK">
+            <connections>
+                <outlet property="delegate" destination="wY7-GG-vmb" id="uCk-WR-aZk"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="b4j-1E-fvk">
+            <connections>
+                <outlet property="delegate" destination="wY7-GG-vmb" id="5Mj-wP-gKs"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="RU0-gO-XCu">
+            <connections>
+                <outlet property="delegate" destination="wY7-GG-vmb" id="jQq-Tq-kgw"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="red-line" width="729" height="212"/>
+        <image name="foursquareIcon" width="512" height="512"/>
+        <image name="googleIcon" width="1024" height="1024"/>
+        <image name="tripadvisorIcon" width="1024" height="1024"/>
+        <image name="vivaIcon" width="152" height="152"/>
+        <image name="yelpIcon" width="300" height="300"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
